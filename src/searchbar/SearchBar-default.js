@@ -107,6 +107,7 @@ class SearchBar extends React.Component {
             styles.inputContentContainer(theme),
             lightTheme && styles.inputContentContainerLight(theme),
             round && styles.round,
+            borderBottomWidth: inputContainerStyle.borderWidth || 0,
             inputContainerStyle,
           ])}
           containerStyle={styles.inputContainer}
@@ -210,7 +211,6 @@ const styles = {
     marginLeft: 10,
   }),
   inputContentContainer: (theme) => ({
-    borderBottomWidth: 0,
     borderRadius: 3,
     overflow: 'hidden',
     minHeight: 30,
